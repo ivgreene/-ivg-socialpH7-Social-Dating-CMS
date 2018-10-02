@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {
+      "appliesTo": "templates/system/modules/connect/themes/base/config/config.ini",
+      "taskName": "task-config",
+      "type": "launch"
+    }
+  ],
+  "version": "0.2.1"
+}
