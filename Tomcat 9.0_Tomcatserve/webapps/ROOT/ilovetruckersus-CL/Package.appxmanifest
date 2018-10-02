@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+         xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+         xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+         xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+         xmlns:uap6="http://schemas.microsoft.com/appx/manifest/uap/windows10/6"
+         xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2"
+         xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
+         xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4"
+         IgnorableNamespaces="uap mp rescap uap3 uap6 uap2 iot uap4">
+  <Identity Name="8aab13fd-4587-4550-b5a3-3f0fa6cce51f" Publisher="CN=Elvira" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>ilovetruckersus-CL</DisplayName>
+    <PublisherDisplayName>ivgreene</PublisherDisplayName>
+    <Logo>Images\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14393.0" MaxVersionTested="10.0.14393.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
+      <uap:VisualElements DisplayName="ilovetruckersus-CL" Description="ilovetruckersus-CL" BackgroundColor="transparent" Square150x150Logo="Images\Square150x150Logo.png" Square44x44Logo="Images\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png">
+        </uap:DefaultTile>
+      </uap:VisualElements>
+      <uap:ApplicationContentUriRules>
+        <uap:Rule Match="http://ilovetruckersus.dx.am" Type="include" WindowsRuntimeAccess="all" />
+      </uap:ApplicationContentUriRules>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="allJoyn" />
+    <Capability Name="codeGeneration" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="privateNetworkClientServer" />
+    <uap3:Capability Name="backgroundMediaPlayback" />
+    <uap:Capability Name="chat" />
+    <uap:Capability Name="contacts" />
+    <uap6:Capability Name="graphicsCapture" />
+    <uap:Capability Name="objects3D" />
+    <uap:Capability Name="picturesLibrary" />
+    <uap3:Capability Name="remoteSystem" />
+    <uap:Capability Name="removableStorage" />
+    <uap:Capability Name="sharedUserCertificates" />
+    <uap2:Capability Name="spatialPerception" />
+    <uap:Capability Name="userAccountInformation" />
+    <iot:Capability Name="systemManagement" />
+    <uap:Capability Name="videosLibrary" />
+    <uap3:Capability Name="userNotificationListener" />
+    <uap4:Capability Name="userDataTasks" />
+    <rescap:Capability Name="runFullTrust" />
+    <DeviceCapability Name="bluetooth" />
+    <DeviceCapability Name="location" />
+    <DeviceCapability Name="microphone" />
+    <DeviceCapability Name="pointOfService" />
+    <DeviceCapability Name="proximity" />
+    <DeviceCapability Name="webcam" />
+  </Capabilities>
+</Package>
